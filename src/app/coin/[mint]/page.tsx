@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { listWxmrCoins, xmrUsd } from "@/lib/mogz";
 import { CURVE_GRADUATION_XMR, MOGZ_API } from "@/lib/constants";
+import TradePanel, { GetWxmr } from "@/components/TradePanel";
 
 function fmt(n: number | null | undefined, digits = 4): string {
   if (n === null || n === undefined) return "—";
@@ -33,7 +34,7 @@ async function CoinDetail({ mint }: { mint: string }) {
         </div>
         <p className="mt-1 text-[13px] text-dim">Curve progress: {pct === null ? "—" : `${pct.toFixed(1)}%`} to graduation</p>
       </div>
-      <p className="mt-4 text-dim">Trading opens with the trade flow (stage 4) — simulated and reviewed before anything live.</p>
+      <p className="mt-4 text-dim">Trading below runs simulate-only (stage 4) — reviewed before anything goes live.</p>
       <a href={`${MOGZ_API}/coin/${mint}`} target="_blank" rel="noreferrer" className="mt-2 inline-block font-semibold text-accent">
         View on mogz.fun →
       </a>
@@ -50,6 +51,8 @@ export default async function CoinPage({ params }: { params: Promise<{ mint: str
       <Suspense fallback={<p className="text-dim">Loading coin…</p>}>
         <CoinDetail mint={mint} />
       </Suspense>
+      <TradePanel mint={mint} />
+      <GetWxmr />
       <Link href="/coins" className="text-dim">← All coins</Link>
     </div>
   );
