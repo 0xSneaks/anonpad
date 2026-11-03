@@ -1,11 +1,11 @@
-# Stealthpad — project rules
+# AnonPad — project rules
 
-Stealthpad is a front end that launches Solana coins quoted in **wXMR** through
+AnonPad is a front end that launches Solana coins quoted in **wXMR** through
 **mogz.fun** rails (Meteora Dynamic Bonding Curve). It is NOT its own program:
 no custom on-chain code, no keeper, no fee-payout contract in v1.
 
 ## Hard rules
-- Name is **Stealthpad**. Never use "Ombro" or $OMBRO anywhere (rug-associated name, Sneaks 2026-11-03).
+- Name is **AnonPad**. Never use "Ombro" or $OMBRO anywhere (rug-associated name, Sneaks 2026-11-03).
 - Quote token is always wXMR: mint `WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp` (12 decimals).
 - Non-custodial: Phantom + Solflare only. Never hold, ask for, or transmit user keys or seed phrases.
 - Every page that mentions the bridge shows: "wXMR bridge is run by one operator (custodial)."
