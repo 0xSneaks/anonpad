@@ -1,0 +1,127 @@
+{
+ "started": "2026-11-03T19:18:45Z",
+ "mode": "SIMULATE_ONLY_NO_BROADCAST",
+ "coin": {
+  "name": "AnonPad Sim Test",
+  "ticker": "SIMT",
+  "description": "P2 simulation only - not a launch, not a real coin."
+ },
+ "steps": [
+  {
+   "step": "auth_me",
+   "username": "muse",
+   "coinsCreated": 7
+  },
+  {
+   "step": "upload_image",
+   "url": "https://gateway.pinata.cloud/ipfs/QmXnFXNTH4TmptchFrAMHSUFAGtqg9Yo5RQ1FRoFCuwMVw"
+  },
+  {
+   "step": "upload_metadata",
+   "uri": "https://gateway.pinata.cloud/ipfs/QmUM86LN8KX5PMewuFmWkHG5uz399BEh5sbdhqHsCiMxzE"
+  },
+  {
+   "step": "tx_create",
+   "has_tx": true,
+   "cosign": "qtJUOG8cgMdMh3ES.uZYrEFbxl0lpQ4nM4UiCSA.USc0LXyktwfqR2Okgv8IW3l2K3_dWINLSkh92139YUgZy1KuZt8r7fUGJg6rFGu7M__JWuwYMV4tiQBZM389cXTuzvRi5u9qkepzIG-o8GfZnJzSkoLgSEauixIN9Lj9ayelpj1XTEzdjM5OopwKQ92NUEsj_JTuzNkyGU3EDJpYqq-aQDlasq24bN1ibmcS-mmtu8wLCeCMSwU-yz6hKecNBjZBDRqOMilRqA4rxIs9akwwiynZcSH0SAWEELuArJ8yla1NDZffGlIREfxy26ruY_1VXXeQ2pXt1pE4XAnCTzgMmVHr7p0d-zBeZ5GTJYgWQ-V9M2EDDCgHdqJ5x6Z8UMfzUN8QROFDggz87BkDQrnmG1u6qseNfYfaieAsmNf7LHXco4OXa6mSqt7phsiF0EWWt5td0RXVQogaXeRoyzlWmKap0vh2Q3U9kWRVG-nXi_3mnYYoEb7DgDFelk-JX92melkeE3pXw7m9ZUbOlm4XtQ",
+   "mint": null
+  },
+  {
+   "step": "tx_decode_unsigned",
+   "kind": "versioned",
+   "feePayer": "2LYQUArYnaYR2YTePK99mUiYU5mFXn1qZqe5b3xGsvHt",
+   "signers": [
+    "AAAAAAAA",
+    "AAAAAAAA",
+    "AAAAAAAA"
+   ],
+   "instructions": [
+    {
+     "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+     "nAccounts": 8
+    },
+    {
+     "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+     "nAccounts": 16
+    }
+   ],
+   "accounts": [
+    "2LYQUArYnaYR2YTePK99mUiYU5mFXn1qZqe5b3xGsvHt",
+    "4Fiv4ScwkNvCzP33y58LJfuieJXYrrGL8QH12CMgmogz",
+    "HVo5h99VcQrzfjq7FRjVrbXEZkAjcoU1aHFoBoPFZcRz",
+    "2sSo3oytyCcnzET1aAVbdVMRLGDfSqDA45PwGBE19YSb",
+    "7zUMh2HrWLYn6wgErgKUexe8RfjskmsabzmaBUtpWJND",
+    "9121dxBuThfDAXYU2r3yihDUwq24QJiZ1dNTaq2EcYCu",
+    "Db4xxtHeCm1TwKJ7nLJAf1nkKURT7ixN7bke8M9xRRif",
+    "11111111111111111111111111111111",
+    "8Ks12pbrD6PXxfty1hVQiE9sc289zgU1zHkvXhrSdriF",
+    "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+    "FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM",
+    "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "W55q6P8rJESfavd1RVDxYb4QVbLpCsrwD2EoEEj2PG2",
+    "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp"
+   ]
+  },
+  {
+   "step": "signed",
+   "changed": true
+  },
+  {
+   "step": "cosign",
+   "server_signed": true
+  },
+  {
+   "step": "tx_decode_final",
+   "kind": "versioned",
+   "feePayer": "2LYQUArYnaYR2YTePK99mUiYU5mFXn1qZqe5b3xGsvHt",
+   "signers": [
+    "36Fd659U",
+    "JUPfeFaM",
+    "FsWw1eOJ"
+   ],
+   "instructions": [
+    {
+     "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+     "nAccounts": 8
+    },
+    {
+     "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+     "nAccounts": 16
+    }
+   ],
+   "accounts": [
+    "2LYQUArYnaYR2YTePK99mUiYU5mFXn1qZqe5b3xGsvHt",
+    "4Fiv4ScwkNvCzP33y58LJfuieJXYrrGL8QH12CMgmogz",
+    "HVo5h99VcQrzfjq7FRjVrbXEZkAjcoU1aHFoBoPFZcRz",
+    "2sSo3oytyCcnzET1aAVbdVMRLGDfSqDA45PwGBE19YSb",
+    "7zUMh2HrWLYn6wgErgKUexe8RfjskmsabzmaBUtpWJND",
+    "9121dxBuThfDAXYU2r3yihDUwq24QJiZ1dNTaq2EcYCu",
+    "Db4xxtHeCm1TwKJ7nLJAf1nkKURT7ixN7bke8M9xRRif",
+    "11111111111111111111111111111111",
+    "8Ks12pbrD6PXxfty1hVQiE9sc289zgU1zHkvXhrSdriF",
+    "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+    "FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM",
+    "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "W55q6P8rJESfavd1RVDxYb4QVbLpCsrwD2EoEEj2PG2",
+    "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp"
+   ]
+  },
+  {
+   "step": "simulate",
+   "err": "AccountNotFound",
+   "unitsConsumed": 0,
+   "n_logs": 0
+  }
+ ],
+ "result": {
+  "stage": "simulate",
+  "err": "AccountNotFound",
+  "unitsConsumed": 0,
+  "logs_tail": [],
+  "accounts": null
+ },
+ "finished": "2026-11-03T19:18:55Z",
+ "broadcast": false
+}
