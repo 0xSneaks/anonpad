@@ -1,4 +1,4 @@
-// Stealthpad front end — mogz.fun rails, wXMR quote. Non-custodial: we only
+// AnonPad front end — mogz.fun rails, wXMR quote. Non-custodial: we only
 // ever ask the wallet to sign; keys never leave Phantom/Solflare.
 const WXMR_MINT = "WXMRyRZhsa19ety5erZhHg4N3xj3EVN92u94422teJp";
 const MOGZ = "https://mogz.fun";
@@ -41,7 +41,7 @@ document.getElementById("launch-form").addEventListener("submit", (e) => {
   const ticker = document.getElementById("f-ticker").value.trim().toUpperCase();
   if (!name || !ticker) return;
   // Hand off to mogz's create page; the pair there is chosen as Custom -> wXMR mint.
-  // mogz builds the create tx in-browser and co-signs; Stealthpad holds nothing.
+  // mogz builds the create tx in-browser and co-signs; AnonPad holds nothing.
   const url = MOGZ + "/create?pair=" + WXMR_MINT + "&name=" + encodeURIComponent(name) + "&ticker=" + encodeURIComponent(ticker);
   window.open(url, "_blank", "noopener");
 });
